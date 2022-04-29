@@ -21,7 +21,7 @@ void diamond(){
         if(k<i)
           printf("*");
         else
-          printf(" ");
+          printf("");
         }
       printf("\n");
     }
@@ -36,7 +36,7 @@ void diamond(){
         if(j<i-2)
           printf("*");
         else
-          printf(" ");
+          printf("");
       }
   printf("\n");
   }
@@ -126,5 +126,3 @@ EXIT:
     }
 
 }
-
-
