@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main(){
-  int size;
+  int size, a;
   int* arr = NULL; //declare pointer
   printf("Enter size of array: ");
   scanf("%d", &size); //take size of arr
@@ -12,9 +12,14 @@ int main(){
   for(int i=0; i< size; i++){ //input
     scanf("%d", (arr+i));
   }
-  printf("Elements in array are: ");
+
+  printf("Emter element to search: ");
+  scanf("%d", &a);
+  
   for(int i=0; i<size;i++ ){ //output
-    printf("%d ", *(arr+i));
+    if(*(arr+i) == a)
+      printf("%d is found at %d position",a, i+1);
+    
   }
   free(arr);
   return 0;

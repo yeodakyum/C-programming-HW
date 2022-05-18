@@ -3,11 +3,11 @@
 
 int main(){
   int size;
-  int* arr = NULL;
+  int* arr = NULL; //declare pointer
   int even=0, odd=0;
   printf("Enter size of array: ");
-  scanf("%d", &size);
-  arr = (int*)malloc(size*sizeof(int));
+  scanf("%d", &size);//take size of arr
+  arr = (int*)malloc(size*sizeof(int));//allocate memory
   
   printf("Enter %d elements in the array: ", size);
   for(int i=0; i< size; i++){

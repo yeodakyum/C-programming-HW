@@ -3,10 +3,10 @@
 
 int main(){
   int size, tmp, swap;
-  int* arr = NULL;
+  int* arr = NULL; //declare pointer
   printf("Enter size of array: ");
-  scanf("%d", &size);
-  arr = (int*)malloc(size*sizeof(int));
+  scanf("%d", &size); //take size of arr
+  arr = (int*)malloc(size*sizeof(int));//allocate memory
   
   printf("Enter %d elements in the array: ", size);
   for(int i=0; i< size; i++){
