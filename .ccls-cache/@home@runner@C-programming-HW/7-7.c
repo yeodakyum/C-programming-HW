@@ -15,7 +15,7 @@ int main(){
   do{                                //bubble sort
     swap =0;
   for(int i=0; i<size-1;i++ ){
-    if(*(arr+i) > *(arr+i+1)){
+    if(*(arr+i) < *(arr+i+1)){
       swap = 1;
       tmp =arr[i];
       arr[i] = arr[i+1];
